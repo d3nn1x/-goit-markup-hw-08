@@ -1,0 +1,75 @@
+.advantages .list {
+  &-item::before {
+    display: block;
+    content: "";
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.antena::before {
+  background-image: url(../img/advantages/antenna.svg);
+}
+
+.clock::before {
+  background-image: url(../img/advantages/clock.svg);
+}
+
+.diagram::before {
+  background-image: url(../img/advantages/diagram.svg);
+}
+
+.astronaut::before {
+  background-image: url(../img/advantages/astronaut.svg);
+}
+
+.subtitle-advantages {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: $first-color;
+}
+
+.subtitle-advantages-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.172;
+}
+
+@media screen and (max-width: 767px) {
+  .advantages .list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .subtitle-advantages {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages .list {
+    margin: -15px;
+  }
+
+  .advantages .list-item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages .list-item {
+    width: 270px;
+  }
+
+  .advantages .list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
