@@ -17,11 +17,30 @@
   padding: 0;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   font-family: "Roboto", sans-serif;
   color: #757575;
   letter-spacing: 0.03em;
   background-color: #fff;
+}
+
+header {
+  flex: 0 0 auto;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex: 0 0 auto;
 }
 
 a {
